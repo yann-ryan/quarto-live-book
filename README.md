@@ -14,40 +14,62 @@ to add the right extension
 4. Then edited the -quarto.yml file to look like this:
 
 `project:
+
   type: book
 
 book:
+
   title: "quarto-live-book"
+  
   author: "PDRH"
+  
   date: "3/1/2025"
+  
   chapters:
+  
     - index.qmd
+    
     - intro.qmd
+    
     - summary.qmd
+    
     - references.qmd
 
 bibliography: references.bib
 
 format: live-html
+
 webr:
+
   packages:
+  
   - tidyverse
+    
   - palmerpenguins
+    
   - ggplot2
 
 engine: knitr
+
 editor: visual`
 
 5. Then at the top of each of the default chapters
 (index.qmd, intro.qmd, summary.qmd) inserted the following at the top of each file:
 
 `---`
+
 `format: live-html
+
 webr:
+
   packages:
+  
     - dplyr
+    
     - palmerpenguins
+    
     - ggplot2`
+    
 `---`
 
 {{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
