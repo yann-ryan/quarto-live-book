@@ -1,0 +1,22 @@
+---
+format: live-html
+webr:
+  packages:
+    - dplyr
+    - palmerpenguins
+    - ggplot2
+---
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+# Introduction
+
+This is a book created from markdown and executable code.
+
+See @knuth84 for additional discussion of literate programming.
+
+Below is an interactive `webr` code block - edit and run.
+
+```{webr}
+1 + 1
+```

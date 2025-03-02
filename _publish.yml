@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 74513d68-cecc-4bea-9a0e-22185900936a
+      url: 'https://phiggins.quarto.pub/quarto-live-book'

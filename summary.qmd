@@ -1,0 +1,20 @@
+---
+format: live-html
+webr:
+  packages:
+    - dplyr
+    - palmerpenguins
+    - ggplot2
+---
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+# Summary
+
+In summary, this book has no content whatsoever.
+
+Try the interactive code block below.
+
+```{webr}
+2 + 2
+```
