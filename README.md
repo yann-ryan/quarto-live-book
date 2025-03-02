@@ -60,9 +60,9 @@ editor: visual
 format: live-html <br>
 webr: <br>
   packages: <br>
-     - dplyr <br>
-     - palmerpenguins <br>
-     - ggplot2 <br>
+    - dplyr <br>
+    - palmerpenguins <br>
+    - ggplot2 <br>
 `---` <br>
 
 `{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}`
