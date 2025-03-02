@@ -58,12 +58,12 @@ editor: visual
 
 `---` <br>
 format: live-html <br>
-webr:
-  packages:
-     - dplyr
-     - palmerpenguins
-     - ggplot2
-`---`
+webr: <br>
+  packages: <br>
+     - dplyr <br>
+     - palmerpenguins <br>
+     - ggplot2 <br>
+`---` <br>
 
 {{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
 
