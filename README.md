@@ -74,6 +74,7 @@ to quarto-pubs
 <br>
 <br>
 
-There is a lot more help on how to build quarto books here - https://quarto.org/docs/reference/projects/books.html
+There is a lot more help on how to build quarto books here - <br> https://quarto.org/docs/reference/projects/books.html
 <br>
-And even more help on options for quarto-live (and exercises) here - https://r-wasm.github.io/quarto-live/
+<br>
+And even more help on options for quarto-live (and exercises) here - <br> https://r-wasm.github.io/quarto-live/
