@@ -13,24 +13,24 @@ to add the right extension
 
 4. Then edited the -quarto.yml file to look like this:
 
-project:
-&nbsp;&nbsp;type: book
+project:<br>
+&nbsp;&nbsp;type: book <br>
 
-book:
-&nbsp;&nbsp;title: "quarto-live-book"
-&nbsp;&nbsp;author: "PDRH"
-&nbsp;&nbsp;date: "3/1/2025"
-&nbsp;&nbsp;chapters:
-&nbsp;&nbsp;&nbsp;&nbsp;- index.qmd
-&nbsp;&nbsp;&nbsp;&nbsp;- intro.qmd
-&nbsp;&nbsp;&nbsp;&nbsp;- summary.qmd
-&nbsp;&nbsp;&nbsp;&nbsp;- references.qmd
+book: <br>
+&nbsp;&nbsp;title: "quarto-live-book" <br>
+&nbsp;&nbsp;author: "PDRH" <br>
+&nbsp;&nbsp;date: "3/1/2025" <br>
+&nbsp;&nbsp;chapters: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- index.qmd <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- intro.qmd <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- summary.qmd <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- references.qmd <br>
 
-bibliography: references.bib
+bibliography: references.bib <br>
 
-format: live-html
-engine: knitr
-editor: visual
+format: live-html <br>
+engine: knitr <br>
+editor: visual <br>
 
 5. Then at the top of each of the default chapters
 (index.qmd, intro.qmd, summary.qmd) inserted the following at the top of each file:
