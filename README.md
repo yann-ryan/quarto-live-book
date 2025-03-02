@@ -55,7 +55,7 @@ if I want it to be static - leave the chunk label as something like this:
 
 {r chunk-name}
 
-If I want it to be a LIVE code chunk, I need to start the code chunkwith {webr}
+If I want it to be a LIVE code chunk, I need to start the code chunk with {webr}
 like this:
 
 {webr chunk-name2}
@@ -69,5 +69,6 @@ then enter `quarto publish` and Enter
 <br>
 I will be asked whether to publish to my usual quarto-pub domain
 (say yes, Enter)
-and it renders the whole website for me (after asking me to confirm authorization to quarto-pubs)
+and it renders the whole book for me (after asking me to confirm authorization to quarto-pubs)
+to quarto-pubs
 
