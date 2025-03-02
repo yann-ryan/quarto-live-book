@@ -72,3 +72,7 @@ I will be asked whether to publish to my usual quarto-pub domain
 and it renders the whole book for me (after asking me to confirm authorization to quarto-pubs)
 to quarto-pubs
 
+
+There is a lot more help on how to build quarto books here - https://quarto.org/docs/reference/projects/books.html
+
+And even more help on options for quarto-live (and exercises) here - https://r-wasm.github.io/quarto-live/
