@@ -14,43 +14,22 @@ to add the right extension
 4. Then edited the -quarto.yml file to look like this:
 
 project:
-
-  type: book
+&nbsp;&nbsp;type: book
 
 book:
-
-  title: "quarto-live-book"
-  
-  author: "PDRH"
-  
-  date: "3/1/2025"
-  
-  chapters:
-  
-    - index.qmd
-    
-    - intro.qmd
-    
-    - summary.qmd
-    
-    - references.qmd
+&nbsp;&nbsp;title: "quarto-live-book"
+&nbsp;&nbsp;author: "PDRH"
+&nbsp;&nbsp;date: "3/1/2025"
+&nbsp;&nbsp;chapters:
+&nbsp;&nbsp;&nbsp;&nbsp;- index.qmd
+&nbsp;&nbsp;&nbsp;&nbsp;- intro.qmd
+&nbsp;&nbsp;&nbsp;&nbsp;- summary.qmd
+&nbsp;&nbsp;&nbsp;&nbsp;- references.qmd
 
 bibliography: references.bib
 
 format: live-html
-
-webr:
-
-  packages:
-  
-  - tidyverse
-    
-  - palmerpenguins
-    
-  - ggplot2
-
 engine: knitr
-
 editor: visual
 
 5. Then at the top of each of the default chapters
