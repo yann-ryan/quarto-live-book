@@ -56,21 +56,14 @@ editor: visual
 5. Then at the top of each of the default chapters
 (index.qmd, intro.qmd, summary.qmd) inserted the following at the top of each file:
 
----
-
+`---`
 format: live-html
-
 webr:
-
   packages:
-  
-    - dplyr
-    
-    - palmerpenguins
-    
-    - ggplot2
-    
----
+     - dplyr
+     - palmerpenguins
+     - ggplot2
+`---`
 
 {{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
 
