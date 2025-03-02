@@ -11,7 +11,7 @@ to add the right extension
 
 3. Then agreed to trust the authors (Yes)
 
-4. Then edited the -quarto.yml file to look like this:
+4. Then edited the _quarto.yml file to look like this:
 
 project:<br>
 &nbsp;&nbsp;type: book <br>
