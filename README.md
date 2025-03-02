@@ -57,15 +57,15 @@ editor: visual
 (index.qmd, intro.qmd, summary.qmd) inserted the following at the top of each file:
 
 `---` <br>
-format: live-html <br>
+`format: live-html <br>
 webr: <br>
   packages: <br>
      - dplyr <br>
      - palmerpenguins <br>
-     - ggplot2 <br>
+     - ggplot2` <br>
 `---` <br>
 
-{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+`{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}`
 
 This sets the format to that chapter to live-html, and loads 3 packages.
 
