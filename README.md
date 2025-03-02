@@ -51,15 +51,23 @@ This sets the format to that chapter to live-html, and loads 3 packages.
 The bit outside of the yaml header sets up the knitr engine for R
 
 6. Then for each code chunk,
-if I want it to be static - leave as something like this:
+if I want it to be static - leave the chunk label as something like this:
 
-```{r}
-1 + 1
-```
+{r chunk-name}
 
-If I want it to be a LIVE code chunk, I need to start with {webr}
+If I want it to be a LIVE code chunk, I need to start the code chunkwith {webr}
 like this:
 
-```{webr}
-1 + 1
-```
+{webr chunk-name2}
+
+
+7. Then I edit each qmd file, and render it to make sure it looks like what I expect.
+
+8. Then to publish this to the quarto-pub website,
+I go back to Terminal, to the directory for this project,
+then enter `quarto publish` and Enter
+<br>
+I will be asked whether to publish to my usual quarto-pub domain
+(say yes, Enter)
+and it renders the whole website for me (after asking me to confirm authorization to quarto-pubs)
+
