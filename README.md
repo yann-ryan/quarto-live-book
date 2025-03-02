@@ -46,9 +46,9 @@ webr: <br>
 
 `{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}`
 
-This sets the format to that chapter to live-html, and loads 3 packages.
+This sets the format to that chapter to live-html, and loads 3 packages (you can change these to whatever packages you might need in that chapter).
 
-The bit outside of the yaml header sets up the knitr engine for R
+The last bit, outside of the yaml header, sets up the knitr engine for R
 
 6. Then for each code chunk,
 if I want it to be static - leave the chunk label as something like this:
