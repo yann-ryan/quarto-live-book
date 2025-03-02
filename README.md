@@ -56,8 +56,8 @@ editor: visual
 5. Then at the top of each of the default chapters
 (index.qmd, intro.qmd, summary.qmd) inserted the following at the top of each file:
 
-`---`
-format: live-html
+`---` <br>
+format: live-html <br>
 webr:
   packages:
      - dplyr
