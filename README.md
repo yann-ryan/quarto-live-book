@@ -1,48 +1,28 @@
-This project demo is published at:
-https://phiggins.quarto.pub/quarto-live-book
+This is a fork of the original project.
 
-To make this project work, I 
+This project demo is published at: https://phiggins.quarto.pub/quarto-live-book
 
-1. opened the project as a
-New Project/Quarto book
+To make this project work, I
 
-2. Went to the Terminal tab, then entered 'quarto add r-wasm/quarto-live'
-to add the right extension
+1.  opened the project as a New Project/Quarto book
 
-3. Then agreed to trust the authors (Yes)
+2.  Went to the Terminal tab, then entered 'quarto add r-wasm/quarto-live' to add the right extension
 
-4. Then edited the _quarto.yml file to look like this:
+3.  Then agreed to trust the authors (Yes)
 
-project:<br>
-&nbsp;&nbsp;type: book <br>
+4.  Then edited the \_quarto.yml file to look like this:
 
-book: <br>
-&nbsp;&nbsp;title: "quarto-live-book" <br>
-&nbsp;&nbsp;author: "PDRH" <br>
-&nbsp;&nbsp;date: "3/1/2025" <br>
-&nbsp;&nbsp;chapters: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;- index.qmd <br>
-&nbsp;&nbsp;&nbsp;&nbsp;- intro.qmd <br>
-&nbsp;&nbsp;&nbsp;&nbsp;- summary.qmd <br>
-&nbsp;&nbsp;&nbsp;&nbsp;- references.qmd <br>
+project:<br>   type: book <br>
+
+book: <br>   title: "quarto-live-book" <br>   author: "PDRH" <br>   date: "3/1/2025" <br>   chapters: <br>     - index.qmd <br>     - intro.qmd <br>     - summary.qmd <br>     - references.qmd <br>
 
 bibliography: references.bib <br>
 
-format: live-html <br>
-engine: knitr <br>
-editor: visual <br>
+format: live-html <br> engine: knitr <br> editor: visual <br>
 
-5. Then at the top of each of the default chapters
-(index.qmd, intro.qmd, summary.qmd) inserted the following at the top of each file:
+5.  Then at the top of each of the default chapters (index.qmd, intro.qmd, summary.qmd) inserted the following at the top of each file:
 
-`---` <br>
-format: live-html <br>
-webr: <br>
-&nbsp;&nbsp;packages: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;- dplyr <br>
-&nbsp;&nbsp;&nbsp;&nbsp;- palmerpenguins <br>
-&nbsp;&nbsp;&nbsp;&nbsp;- ggplot2 <br>
-`---` <br>
+`---` <br> format: live-html <br> webr: <br>   packages: <br>     - dplyr <br>     - palmerpenguins <br>     - ggplot2 <br> `---` <br>
 
 `{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}`
 
@@ -50,31 +30,16 @@ This sets the format to that chapter to live-html, and loads 3 packages (you can
 
 The last bit, outside of the yaml header, sets up the knitr engine for R
 
-6. Then for each code chunk,
-if I want it to be static - leave the chunk label as something like this:
+6.  Then for each code chunk, if I want it to be static - leave the chunk label as something like this:
 
 {r chunk-name}
 
-If I want it to be a LIVE code chunk, I need to start the code chunk with {webr}
-like this:
+If I want it to be a LIVE code chunk, I need to start the code chunk with {webr} like this:
 
 {webr chunk-name2}
 
+7.  Then I edit each qmd file, and render it to make sure it looks like what I expect.
 
-7. Then I edit each qmd file, and render it to make sure it looks like what I expect.
+8.  Then to publish this to the quarto-pub website, I go back to Terminal, to the directory for this project, then enter `quarto publish` and Enter <br> I will be asked whether to publish to my usual quarto-pub domain (say yes, Enter) and it renders the whole book for me (after asking me to confirm authorization to quarto-pubs) to quarto-pubs <br> <br>
 
-8. Then to publish this to the quarto-pub website,
-I go back to Terminal, to the directory for this project,
-then enter `quarto publish` and Enter
-<br>
-I will be asked whether to publish to my usual quarto-pub domain
-(say yes, Enter)
-and it renders the whole book for me (after asking me to confirm authorization to quarto-pubs)
-to quarto-pubs
-<br>
-<br>
-
-There is a lot more help on how to build quarto books here - <br> https://quarto.org/docs/reference/projects/books.html
-<br>
-<br>
-And even more help on options for quarto-live (and exercises) here - <br> https://r-wasm.github.io/quarto-live/
+There is a lot more help on how to build quarto books here - <br> https://quarto.org/docs/reference/projects/books.html <br> <br> And even more help on options for quarto-live (and exercises) here - <br> https://r-wasm.github.io/quarto-live/
